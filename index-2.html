@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahasiswa Sistem Informasi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://exampllee.vercel.app/assets/F10.jpg') no-repeat center/cover;
+      color: #222;
+    }
+
+    header {
+      background: rgba(0, 52, 112, 0.95);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    main {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 40px auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0b74de;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    img {
+      display: block;
+      max-width: 75%;
+      height: auto;
+      border-radius: 12px;
+      margin: 10px auto;
+    }
+
+    .gif {
+      display: block;
+      max-width: 600px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    code {
+      background: #eef4ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background: #0b74de;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      background: rgba(0, 52, 112, 0.95);
+      color: white;
+      padding: 10px;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+
+    ul, ol, dl {
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mahasiswa Sistem Informasi</h1>
+    <p>Jago IT 🇮🇩 · Suka Koding · Berkarakter 🌱</p>
+  </header>
+
+  <main>
+    <!-- Bagian 1: HTML Images -->
+    <h2>📸 HTML Images</h2>
+    <p>Tag <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar + dijadikan tautan. Contohnya:</p>
+
+    <a href="https://www.w3schools.com" target="_blank">
+      <img src="https://exampllee.vercel.app/assets/F01.jpg" alt="Setup komputer minimalis">
+    </a>
+
+    <p><strong>Contoh gambar animasi (GIF):</strong></p>
+    <img src="https://exampllee.vercel.app/assets/G02.gif" alt="GIF lucu" class="gif">
+
+    <p>Dan berikut penerapan <code>&lt;picture&gt;</code> element:</p>
+    <a href="https://www.w3schools.com" target="_blank">
+      <img src="https://exampllee.vercel.app/assets/F11.jpg" alt="Kucing lucu">
+    </a>
+
+    <!-- Bagian 2: Image Map -->
+    <h2>🗺️ Image Map</h2>
+    <p>Kita bisa membuat gambar yang memiliki area klik berbeda-beda.</p>
+
+    <img src="https://exampllee.vercel.app/assets/F16.jpg" alt="Tempat kerja" usemap="#workmap">
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" href="https://www.w3schools.com/html/" alt="Komputer">
+      <area shape="circle" coords="500,300,60" href="https://www.w3schools.com/html/" alt="Cangkir Kopi">
+    </map>
+    <p><i>Coba klik bagian komputer atau cangkir kopi di gambar di atas!</i></p>
+
+    <!-- Bagian 3: HTML Tables -->
+    <h2>📊 HTML Tables</h2>
+    <p>Tabel digunakan untuk menampilkan data baris dan kolom.</p>
+
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Minat</th>
+      </tr>
+      <tr>
+        <td>Fathur</td>
+        <td>0110122090</td>
+        <td>Web Development</td>
+      </tr>
+      <tr>
+        <td>Riyan</td>
+        <td>0110122091</td>
+        <td>UI/UX Design</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Jumlah Mahasiswa Aktif: 2</strong></td>
+      </tr>
+    </table>
+
+    <!-- Bagian 4: HTML Lists -->
+    <h2>📋 HTML Lists</h2>
+    <p><b>Unordered List</b> (daftar tanpa urutan):</p>
+    <ul>
+      <li>Analisis Sistem</li>
+      <li>Desain Database</li>
+      <li>Pemrograman Web</li>
+    </ul>
+
+    <p><b>Ordered List</b> (daftar berurutan):</p>
+    <ol>
+      <li>Belajar HTML</li>
+      <li>Belajar CSS</li>
+      <li>Belajar JavaScript</li>
+    </ol>
+
+    <p><b>Description List</b>:</p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Bahasa untuk membuat struktur web.</dd>
+
+      <dt>CSS</dt>
+      <dd>Bahasa untuk memperindah tampilan web.</dd>
+
+      <dt>JavaScript</dt>
+      <dd>Bahasa untuk membuat web menjadi interaktif.</dd>
+    </dl>
+  </main>
+
+  <footer>
+    © 2025 STT Nurul Fikri — Jago IT & Berkarakter
+  </footer>
+</body>
+</html>
